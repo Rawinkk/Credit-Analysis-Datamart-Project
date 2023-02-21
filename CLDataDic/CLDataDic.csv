@@ -1,0 +1,48 @@
+﻿LoanFactors,Description
+borrower_id,A unique Borrower assigned ID for the loan listing.
+address,The state provided by the borrower in the loan application
+employment_status,Occupational categories
+income,Value of current property
+yoj,Years at present job
+gender,"The gender of the borrower (M = Male , F = Female)"
+education_level,"The education level of the borrower (UB = under bachelor’s or equivalent level , B = bachelor’s or equivalent level)"
+home_ownership_status,"The home ownership status provided by the borrower during registration (RENT, OWN, MORTGAGE, OTHER)"
+derog,Number of major derogatory reports
+debt_to_income_ratio,The ratio of the borrower's total debt payments to their income
+delinq,Number of delinquent credit lines
+date_key,This is the primary key of the date dimension table and uniquely identifies each date.
+date,This is the actual date represented in the format YYYY-MM-DD.
+weekday,"This column contains the name of the day of the week (e.g., Monday, Tuesday, etc.)."
+weekday_num,"This column contains the day of the week represented as a number (e.g., 1 - 7 etc.)."
+day_month,"This column contains the day of the month represented as a number (e.g., 1, 2, 3, etc.)."
+day_of_year,"This column contains the day of the year represented as a number (e.g., 1 for January 1, 365 for December 31 in a non-leap year)."
+week_of_year,"This column contains the week of the year represented as a number (e.g., 1 for the first week of January)."
+iso_week,An ISO week-numbering year (also called ISO year informally) has 52 or 53 full weeks.
+month_num,"This column contains the number of the month (e.g., 1 for January, 2 for February, etc.)."
+month_name,"This column contains the name of the month (e.g., January, February, etc.)."
+month_name_short,"This column contains the Short name of the month (e.g., Jan, Feb, etc.)."
+quarter integer,"This column contains the name of the quarter (e.g., Q1, Q2, etc.)."
+year,"This column contains the year represented as a number (e.g., 2023)."
+first_day_of_month,This column contains actual date of firstday of this month represented in the format YYYY-MM-DD.
+last_day_of_month,This column contains actual date of lastday of this month represented in the format YYYY-MM-DD.
+yyyymm,This is the actual date represented in the format YYYY-MM
+weekend_indr,"This column contains the name that indicates whether the date falls on a weekend (e.g.,weekend,weekday)."
+economic_indicator_id,A unique Economic indicator assigned ID at the time
+gdp_time,"Gross domestic product (GDP) growth at observation time, in %"
+uer_time,"Unemployment rate at observation time, in %"
+hpi_time,"House price index at origination time, base year = 100"
+loan_id integer,A unique Loan transection assigned ID at the time
+loan_amount,Outstanding balance at observation time
+interest_rate ,"Interest rate at observation time, in %"
+balance_orig_time,Outstanding balance at origination time
+mat_time,Time stamp for maturity
+origination_date,Time stamp for origination
+loan_risk_score,"FICO score at origination time, in %"
+delinquency_status,"delinquency observation at observation time (Yes= 1  , no = 0)"
+status_time,"Default (1), payoff (2), and nondefault/nonpayoff (0) observation at observation time"
+loan_type integer,"Real estate type  = 1, otherwise = 0"
+loan_purpose_id ,A unique identifier for each loan purpose in the dimension table
+loan_purpose_name,"The name or description of the loan purpose, such as ""Car Loan"" or ""Mortgage Loan"""
+loan_purpose_category,"A category or classification for the loan purpose, such as ""Auto Loans"" or ""Real Estate Loans"""
+value_h,Value of current property
+is_home_collateral,"borrower's home owner  = 1 , no = 0"
