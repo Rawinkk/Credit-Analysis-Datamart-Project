@@ -4,6 +4,7 @@ This project has been devoloped for practice myskils to create and design DataWa
 - Dimensional Modeling
     - Dimension Tables
     - Fact Table
+    - ERD
 - ETL Process
     - Extract/Transform/Load
 - Basic queries
@@ -20,3 +21,6 @@ for this implementation I'm going to implement simple Dimentional Model. after I
 ### Fact Table
   I retrieve all measurable attributes and transactions factors into this table and populate surrogate keys to Fact table
 
+## ERD
+
+![](https://github.com/Rawinkk/Credit-Analysis-Datamart-Project/blob/main/images/Screenshot_20230221_033743.png)
