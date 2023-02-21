@@ -18,7 +18,7 @@ for this implementation I'm going to implement simple Dimentional Model. after I
   
   4. date_dim: This dimension table should be separate from the other dimention. Date columns that created base on purpose of business. you can reduce or add some columns in this table depending on the purpose the important columns.
 ### Fact Table
-  I retrieve all measurable attributes and transactions factors into this table and populate surrogate keys to Fact tables
+  I retrieve all measurable attributes and transactions factors into this table and populate surrogate keys to Fact table
 
 ## Create Tables:
 
