@@ -39,7 +39,7 @@ I use Pentaho and PostgreSQL to extract, transform, and load data from an extern
 
 ![](https://github.com/Rawinkk/Credit-Analysis-Datamart-Project/blob/main/images/pantaho_edit1.png)
 
-5. Set up new data sorce from public schemas and insert into staging schemas then run job process in Pentaho program to load clean datamart to core schemas
+5. Set up new data source from public schemas and insert into staging schemas then run job process in Pentaho program to load clean datamart to core schemas
 
 ![](https://github.com/Rawinkk/Credit-Analysis-Datamart-Project/blob/main/images/pentaho_edit2.png)
  
