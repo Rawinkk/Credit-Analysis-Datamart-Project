@@ -19,26 +19,29 @@
 
 CREATE TABLE date_dim
 (
-    date_key integer NOT NULL,
-    date date NOT NULL,
-    weekday character varying(9) COLLATE pg_catalog."default" NOT NULL,
-    weekday_num integer NOT NULL,
-    day_month integer NOT NULL,
-    day_of_year integer NOT NULL,
-    week_of_year integer NOT NULL,
-    iso_week character(10) COLLATE pg_catalog."default" NOT NULL,
-    month_num integer NOT NULL,
-    month_name character varying(9) COLLATE pg_catalog."default" NOT NULL,
-    month_name_short character(3) COLLATE pg_catalog."default" NOT NULL,
-    quarter integer NOT NULL,
-    year integer NOT NULL,
-    first_day_of_month date NOT NULL,
-    last_day_of_month date NOT NULL,
-    yyyymm character(7) COLLATE pg_catalog."default" NOT NULL,
-    weekend_indr character(10) COLLATE pg_catalog."default" NOT NULL,
-    CONSTRAINT date_dim_pk PRIMARY KEY (date_key),
-    CONSTRAINT date_dim_economic_indicator_dim_fkey FOREIGN KEY (date_key)
+  date_key              INT NOT NULL,
+  date              	DATE NOT NULL,
+  weekday               VARCHAR(9) NOT NULL,
+  weekday_num           INT NOT NULL,
+  day_month             INT NOT NULL,
+  day_of_year           INT NOT NULL,
+  week_of_year          INT NOT NULL,
+  iso_week         		CHAR(10) NOT NULL,
+  month_num             INT NOT NULL,
+  month_name            VARCHAR(9) NOT NULL,
+  month_name_short   	CHAR(3) NOT NULL,
+  quarter      			INT NOT NULL,
+  year              	INT NOT NULL,
+  first_day_of_month    DATE NOT NULL,
+  last_day_of_month     DATE NOT NULL,
+  yyyymm                CHAR(7) NOT NULL,
+  weekend_indr          CHAR(10) NOT NULL
 );
+
+ALTER TABLE public.date_dim ADD CONSTRAINT date_dim_pk PRIMARY KEY (date_key);
+
+CREATE INDEX d_date_date_actual_idx
+  ON date_dim(date);
 
 CREATE TABLE economic_indicator_dim
 (
