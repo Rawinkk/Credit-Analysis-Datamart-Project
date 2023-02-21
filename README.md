@@ -1,4 +1,4 @@
-# Credit Risk Analysis Datamart Project
+# Credit Analysis Datamart Project
 This project has been devoloped for practice myskils to create and design DataWareHouse consist of Master DataWareHouse,Dimensional Modeling and ETL process.
 ## Contents:
 - Dimensional Modeling
