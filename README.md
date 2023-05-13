@@ -7,7 +7,7 @@ This project has been devoloped for practice myskils to create and design DataWa
     - ERD
 - ETL Process
     - Extract/Transform/Load
-## Dimensinal Modeling:
+## Dimensional Modeling:
 for this implementation I'm going to implement simple Dimentional Model. after I collected data source from lendingclub website and portfolios underlying U.S. residential mortgage-backed securities (RMBS) securitization portfolios and provided by International Financial Research that encourage me to create tables and factors as belows
 ### Dimension Tables
   1. borrower_dim : This dimension table contains descriptive data about borrowers, such as their address, employment status, income, and other demographic information. Each row in the table represents a specific borrower.
